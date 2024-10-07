@@ -1,0 +1,44 @@
+:root {
+    --rojo1: #F21D2F;
+    --rojo2: #D91A2A;
+    --rojo3: #A61420;
+    --rojo4: #730E16;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Monserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2,h3,h4,h5,h6{
+    font-family: 'Monserrat', sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    height: auto;
+    padding: 10px;
+}
