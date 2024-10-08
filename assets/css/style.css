@@ -1,84 +1,128 @@
 :root {
-    --rojo1: #F21D2F;
-    --rojo2: #D91A2A;
-    --rojo3: #A61420;
-    --rojo4: #730E16;
-    scroll-behavior: smooth;
+  --rojo1: #f21d2f;
+  --rojo2: #d91a2a;
+  --rojo3: #a61420;
+  --rojo4: #730e16;
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('woff2');
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("woff2");
 }
 
 @font-face {
-    font-family: 'Monserrat';
-    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("woff2");
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("woff2");
 }
 
-h1, h2,h3,h4,h5,h6{
-    font-family: 'Monserrat', sans-serif;
+@font-face {
+  font-family: "Monserrat-ExtraBold";
+  src: url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf")
+    format("woff2");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Monserrat", sans-serif;
 }
 
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: small;
-    height: auto;
-    padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  height: auto;
+  padding: 10px;
 }
 
 /* navbar */
 
-nav.navbar .collapse.navbar-collapse{
-    justify-content: end;
+nav.navbar .collapse.navbar-collapse {
+  justify-content: end;
 }
 
-.navbar-brand img{
-    width: 10rem;
+.navbar-brand img {
+  width: 10rem;
 }
 
-.nav-link.active{
-    color: black;
-    text-decoration: solid underline var(--rojo2) 2px;
+.nav-link.active {
+  color: black;
+  text-decoration: solid underline var(--rojo2) 2px;
 }
-
-
 
 /* Elementos */
-
-.btn-contacto{
-    background-color: var(--rojo2);
-    color: white;
-    border: 1px solid white;
-    box-shadow: 0 0px 4px lightgray;
+h1 {
+  text-transform: uppercase;
+  font-family: "Monserrat-Bold", sans-serif;
+  color: var(--rojo2);
+  /* font-weight: bolder; */
+}
+.hero-img {
+  background-image: linear-gradient(
+      270deg,
+      rgba(217, 26, 42, 0) 73%,
+      rgba(217, 26, 42, 0.5) 86%,
+      rgba(217, 26, 42, 1) 100%
+    ),
+    url("/assets/img/customs-broker.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
 }
 
-.btn-contacto:hover{
-    background-color: white;
-    border: 1px solid var(--rojo2);
-    box-shadow: 0 0 4px var(--rojo1);
+#hero .container {
+  /* display: grid;
+    height: 100%; */
+  padding: 20px;
 }
 
-
-
-.nav-item .btn-contacto{    
-    border: 1px solid black;
+#hero .group-btn {
+  display: flex;
+  gap: 10px;
 }
 
+.btn-contacto {
+  background-color: var(--rojo2);
+  color: white;
+  /* border: 1px solid white; */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
 
+.btn-contacto:hover {
+  background-color: var(--rojo1);  
+  box-shadow: 0px 8px 16px var(--rojo1);
+  transform: translateY(-4px);
+  color: white;
+}
+
+.nav-item .btn-contacto:hover {
+  /* border: 1px solid black; */
+  transform: translateY(-2px) !important;
+  box-shadow: 0px 4px 16px var(--rojo3) !important;
+}
