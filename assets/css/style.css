@@ -42,3 +42,43 @@ footer {
     height: auto;
     padding: 10px;
 }
+
+/* navbar */
+
+nav.navbar .collapse.navbar-collapse{
+    justify-content: end;
+}
+
+.navbar-brand img{
+    width: 10rem;
+}
+
+.nav-link.active{
+    color: black;
+    text-decoration: solid underline var(--rojo2) 2px;
+}
+
+
+
+/* Elementos */
+
+.btn-contacto{
+    background-color: var(--rojo2);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0px 4px lightgray;
+}
+
+.btn-contacto:hover{
+    background-color: white;
+    border: 1px solid var(--rojo2);
+    box-shadow: 0 0 4px var(--rojo1);
+}
+
+
+
+.nav-item .btn-contacto{    
+    border: 1px solid black;
+}
+
+
