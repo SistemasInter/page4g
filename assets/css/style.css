@@ -64,6 +64,11 @@ nav.navbar .collapse.navbar-collapse {
   justify-content: end;
 }
 
+.bg-navbar {
+  background-color: rgba(248, 249, 250, 0.88) !important;
+  backdrop-filter: blur(10px);
+}
+
 .navbar-brand img {
   width: 10rem;
 }
