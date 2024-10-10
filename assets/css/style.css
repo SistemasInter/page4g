@@ -89,7 +89,7 @@ h2 {
 }
 
 section {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .hero-img {
@@ -109,8 +109,13 @@ section {
 
 @media (max-width: 768px) {
   .hero-img {
-    background-image: linear-gradient(180deg, rgba(217, 26, 42,0) 73%, rgba(217, 26, 42,0.5) 86%, rgba(217, 26, 42,1) 100%),
-    url("/assets/img/customs-broker.jpg");
+    background-image: linear-gradient(
+        180deg,
+        rgba(217, 26, 42, 0) 73%,
+        rgba(217, 26, 42, 0.5) 86%,
+        rgba(217, 26, 42, 1) 100%
+      ),
+      url("/assets/img/customs-broker.jpg");
   }
 }
 
@@ -122,8 +127,6 @@ section {
   display: flex;
   gap: 10px;
 }
-
-
 
 .btn-contacto {
   background-color: var(--rojo2);
@@ -144,24 +147,23 @@ section {
   box-shadow: 0px 4px 16px var(--rojo3) !important;
 }
 
-section#hero{
+section#hero {
   padding-top: 0;
 }
-section#hero .row{
+section#hero .row {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
 
 section#hero .col-md-6 {
- padding: 0;
+  padding: 0;
 }
 
 /* Instalaciones */
 
 section#instalaciones h2 {
   text-align: center;
-  
 }
 
 .carousel-img {
@@ -169,27 +171,26 @@ section#instalaciones h2 {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 10px; /* Ajusta el valor según el espacio deseado */
-
 }
 
-.carousel-text{
+.carousel-text {
   color: white;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.4) 83%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.4) 83%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   height: 100%;
   width: 100%;
   padding: 20px;
   display: flex;
-  align-items: end;  
+  align-items: end;
 }
 
-.carousel-text p{
+.carousel-text p {
   margin-bottom: 0.5rem;
 }
-
-/* TODO */
-/* .carousel-text:hover{
-  display: none;
-} */
 
 ul.slick-dots {
   display: flex;
@@ -199,4 +200,38 @@ ul.slick-dots {
 .slick-prev::before,
 .slick-next::before {
   color: black;
+}
+
+/* Ubicacion */
+section#ubicacion {
+  background-color: var(--rojo2);
+  color: white;
+}
+
+section#ubicacion h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section#ubicacion .col-md-6:first-child {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  border-left: 5px solid white;
+}
+
+@media (max-width: 768px) {
+  section#ubicacion .col-md-6:first-child {
+    border-left: 0;
+    justify-content: center;
+  }
+  section#ubicacion ul li {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+section#ubicacion ul li {
+  list-style-type: none;
 }
