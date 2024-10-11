@@ -17,20 +17,29 @@
     <meta property="og:locale" content="es_MX" />
     <meta property="og:type" content="website" />
 
-    <title>4G LOGISTICS</title>
+    <title>4G TRANSFER US-MEX</title>
     <link
       rel="stylesheet"
-      href="/assets/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+      href="./assets/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/assets/lib/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-navbar sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
-            src="./assets/img/logoEmpresas/INTERENLACE 4G LOGO.jpg"
+            src="./assets/img/logoEmpresas/INTERENLACE_4G_LOGO.png"
             alt="Interenlace 4G Transfer logo"
         /></a>
         <button
@@ -48,20 +57,22 @@
           <div class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#hero"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Servicios</a>
+                <a class="nav-link" aria-current="page" href="#servicios"
+                  >Servicios</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="#instalaciones"
                   >Instalaciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="btn btn-contacto" href="#">Contacto</a>
+                <a class="btn btn-contacto" href="#ubicacion">Contacto</a>
               </li>
             </ul>
           </div>
@@ -71,7 +82,7 @@
 
     <section id="hero">
       <div class="row">
-        <div class="col-md-6" style="display: flex; align-items: center;">
+        <div class="col-md-6" style="display: flex; align-items: center">
           <div class="container">
             <h1>Transportes 4G Transfer Us-Mex SA de CV</h1>
             <p>
@@ -89,11 +100,6 @@
           </div>
         </div>
         <div class="col-md-6">
-          <!-- <img
-            src="./assets/img/customs-broker.jpg"
-            alt=""            
-            class="hero-img"
-          /> -->
           <div class="hero-img"></div>
         </div>
       </div>
@@ -103,21 +109,74 @@
 
     <section id="about"></section>
 
-    <section id="instalaciones"></section>
+    <section id="instalaciones">
+      <div class="container">
+        <h2>NUESTRAS INSTALACIONES</h2>
+        <div class="carousel">
+          <div
+            class="carousel-img"
+            style="background-image: url(./assets/img/apoderado-aduanal.jpg)"
+          >
+            <div class="carousel-text">
+              <p>Truck workshop</p>
+            </div>
+          </div>
+          <div
+            class="carousel-img"
+            style="background-image: url(./assets/img/test1.jpg)"
+          >
+            <div class="carousel-text">
+              <p>Truck workshop</p>
+            </div>
+          </div>
+          <div
+            class="carousel-img"
+            style="background-image: url(./assets/img/customs-broker.jpg)"
+          >
+            <div class="carousel-text">
+              <p>Truck workshop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="ubicacion"></section>
+    <section id="ubicacion">
+      <div class="container">
+        <h2>NUESTRA UBICACIÓN</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li>Blvd. Luis Donaldo Colosio</li>
+              <li>930 Zona de Agentes Aduanales</li>
+              <li>Puente Internacional Reynosa- Pharr</li>
+              <li>C.P. 88788</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div style="width: 100%">
+              <iframe
+                width="100%"
+                height="300"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=Luis%20Donaldo%20Colosio%20930+(4G%20Transfer)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="empresas"></section>
 
     <footer></footer>
 
-    <script src="/assets/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/assets/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="/assets/lib/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-
-    <script>
-      // Para los carousel se usa slick. https://kenwheeler.github.io/slick/
-    </script>
+    <script src="./assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
