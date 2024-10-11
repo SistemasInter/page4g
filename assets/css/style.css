@@ -64,6 +64,11 @@ nav.navbar .collapse.navbar-collapse {
   justify-content: end;
 }
 
+.bg-navbar {
+  background-color: rgba(248, 249, 250, 0.88) !important;
+  backdrop-filter: blur(10px);
+}
+
 .navbar-brand img {
   width: 10rem;
 }
@@ -74,12 +79,24 @@ nav.navbar .collapse.navbar-collapse {
 }
 
 /* Elementos */
-h1 {
+h1,
+h2 {
   text-transform: uppercase;
   font-family: "Monserrat-Bold", sans-serif;
-  color: var(--rojo2);
-  /* font-weight: bolder; */
 }
+h1 {
+  color: var(--rojo2);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--rojo3);
+}
+
+section {
+  padding: 40px 0;
+}
+
 .hero-img {
   background-image: linear-gradient(
       270deg,
@@ -95,9 +112,19 @@ h1 {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .hero-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(217, 26, 42, 0) 73%,
+        rgba(217, 26, 42, 0.5) 86%,
+        rgba(217, 26, 42, 1) 100%
+      ),
+      url("/assets/img/customs-broker.jpg");
+  }
+}
+
 #hero .container {
-  /* display: grid;
-    height: 100%; */
   padding: 20px;
 }
 
@@ -109,20 +136,107 @@ h1 {
 .btn-contacto {
   background-color: var(--rojo2);
   color: white;
-  /* border: 1px solid white; */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
 }
 
 .btn-contacto:hover {
-  background-color: var(--rojo1);  
+  background-color: var(--rojo1);
   box-shadow: 0px 8px 16px var(--rojo1);
   transform: translateY(-4px);
   color: white;
 }
 
 .nav-item .btn-contacto:hover {
-  /* border: 1px solid black; */
   transform: translateY(-2px) !important;
   box-shadow: 0px 4px 16px var(--rojo3) !important;
+}
+
+section#hero {
+  padding-top: 0;
+}
+section#hero .row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section#hero .col-md-6 {
+  padding: 0;
+}
+
+/* Instalaciones */
+
+section#instalaciones h2 {
+  text-align: center;
+}
+
+.carousel-img {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 10px; /* Ajusta el valor según el espacio deseado */
+}
+
+.carousel-text {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.4) 83%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.carousel-text p {
+  margin-bottom: 0.5rem;
+}
+
+ul.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: black;
+}
+
+/* Ubicacion */
+section#ubicacion {
+  background-color: var(--rojo2);
+  color: white;
+}
+
+section#ubicacion h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section#ubicacion .col-md-6:first-child {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  border-left: 5px solid white;
+}
+
+@media (max-width: 768px) {
+  section#ubicacion .col-md-6:first-child {
+    border-left: 0;
+    justify-content: center;
+  }
+  section#ubicacion ul li {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+section#ubicacion ul li {
+  list-style-type: none;
 }
