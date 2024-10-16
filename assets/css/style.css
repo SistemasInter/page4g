@@ -127,7 +127,7 @@ section#hero {
         rgba(217, 26, 42, 0.6) 20%,
         rgba(217, 26, 42, 1) 100%
       ),
-      url("../../assets/img/camiones/camion7.jpg");      
+      url("../../assets/img/camiones/camion6.jpg");      
   }
 
   .hero-img .col-md-6:first-child .container {
@@ -426,11 +426,13 @@ section#footer {
   margin-top: auto;
   width: 100%;
   height: 230px;
-  padding: 10px;
+  /* padding: 10px; */
 }
-.footer {
+
+.footer{
   background-color: rgba(248, 249, 250);
   font-weight: bolder;
+  padding: 4rem;
 }
 
 .icono {
@@ -446,4 +448,44 @@ section#footer {
 
 .footer p {
   font-size: smaller;
+}
+
+
+.footer-contacto {
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+  .logo-footer img{
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 1rem;
+  }
+  .icono {
+    padding-right: 1rem;
+  }
+
+  .footer-contacto {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-contacto p{
+    margin-top: 1rem;
+  }
+
+  .logo-footer img{
+    margin-left: 1rem;
+  }
+
+  .footer-direccion{
+    justify-content: center;
+  }
 }
