@@ -156,8 +156,8 @@ section#hero {
 .btn-contacto {
   background: linear-gradient(to right, #e52d27, #f9464c);
   color: white;
-  border: 1px solid rgb(248, 117, 117);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(250, 143, 143);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease 0s;
   height: 50px;
   align-content: center;
@@ -167,6 +167,8 @@ section#hero {
   background-color: var(--rojo1);
   box-shadow: 0px 8px 16px var(--rojo1);
   transform: translateY(-4px);
+  border: 2px solid rgb(250, 143, 143);
+
   color: white;
 }
 .nav-item .btn-contacto {
@@ -219,6 +221,8 @@ section#servicios .container div.col-md-4.col-sm-2{
   background-size: cover;
   border-radius: 0;
   border: 2px solid var(--rojo2);
+  box-shadow: 0px 7px 30px -10px rgba(0, 0, 0, 0.292);
+
 }
 
 .service-card:hover{
