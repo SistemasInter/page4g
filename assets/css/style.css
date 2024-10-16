@@ -106,7 +106,7 @@ section {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-img {
     background-image: linear-gradient(
         180deg,
@@ -422,11 +422,41 @@ padding-left: 1rem;
   font-size: smaller;
 }
 
+.footer-contacto {
+  text-align: end;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 1rem;
   }
   .logo-footer img{
     margin-right: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 1rem;
+  }
+  .icono {
+    padding-right: 1rem;
+  }
+
+  .footer-contacto {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-contacto p{
+    margin-top: 1rem;
+  }
+
+  .logo-footer img{
+    margin-left: 1rem;
+  }
+
+  .footer-direccion{
+    justify-content: center;
   }
 }
