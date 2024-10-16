@@ -154,10 +154,12 @@ section#hero {
 }
 
 .btn-contacto {
-  background-color: var(--rojo2);
+  background: linear-gradient(to right, #e52d27, #f9464c);
   color: white;
+  border: 1px solid rgb(248, 117, 117);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
+  height: 50px;
 }
 
 .btn-contacto:hover {
@@ -166,7 +168,9 @@ section#hero {
   transform: translateY(-4px);
   color: white;
 }
-
+.nav-item .btn-contacto {
+  height: 40px !important;
+}
 .nav-item .btn-contacto:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0px 4px 16px var(--rojo3) !important;
