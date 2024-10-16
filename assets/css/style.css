@@ -116,6 +116,14 @@ section {
       ),
       url("../../assets/img/customs-broker.jpg");
   }
+
+  .group-btn {
+    justify-content: center;
+  }
+
+  section#hero p, h1 {
+    text-align: center;
+  }
 }
 
 #hero .container {
@@ -249,6 +257,29 @@ section#about p {
   font-size: small;
 }
 
+.about-info {
+  padding-left: 3rem
+}
+
+.about-img img {
+  width: 30rem;
+  border:4px solid white;
+}
+
+@media (max-width: 991px) {
+  .about-info {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img img {
+    width: 25rem;
+    border:4px solid white;
+  }
+}
+
 /* Ubicacion */
 section#ubicacion {
   background-color: var(--rojo2);
@@ -368,11 +399,11 @@ section#footer {
   margin-top: auto;
   width: 100%;
   height: 230px;
-  padding: 10px;
 }
 .footer{
   background-color: rgba(248, 249, 250);
   font-weight: bolder;
+  padding: 4rem;
 }
 
 .icono{
@@ -389,4 +420,13 @@ padding-left: 1rem;
 
 .footer p{
   font-size: smaller;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+  .logo-footer img{
+    margin-right: 2rem;
+  }
 }
