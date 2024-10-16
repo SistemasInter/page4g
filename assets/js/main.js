@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let current = "";
 
     // El usuario está en la parte superior de la página
-    if (pageYOffset === 0) {
+    if (pageYOffset <= 20) {
       navLinks.forEach((link) => {
         link.classList.remove("active");
       });
