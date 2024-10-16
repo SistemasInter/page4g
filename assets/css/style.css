@@ -41,21 +41,14 @@ h6 {
 
 html {
   font-size: 14px;
+  min-height: 100%;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: small;
-  height: auto;
-  padding: 10px;
 }
 
 /* navbar */
@@ -97,7 +90,8 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: var(--rojo3);
+  color: white;
+  text-align: center;
 }
 
 section {
@@ -193,10 +187,39 @@ section#hero .col-md-6 {
   padding: 0;
 }
 
+/*Servicios*/
+section#servicios {
+  background-color: var(--rojo2);
+}
+
+section#servicios h2{
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 18rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text-card {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1rem;
+}
+
+section#servicios .col {
+  display: flex;
+  justify-content: center;
+}
+
 /* Instalaciones */
 
 section#instalaciones h2 {
   text-align: center;
+  color: var(--rojo3);
 }
 
 .carousel-img {
@@ -235,13 +258,32 @@ ul.slick-dots {
   color: black;
 }
 
+/*about*/
+
+section#about {
+  background-color: var(--rojo3);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section#about h4{
+  color: white;
+  font-weight: bolder;
+
+}
+
+section#about p {
+  color: white;
+  font-size: small;
+}
+
 /* Ubicacion */
 section#ubicacion {
   background-color: var(--rojo2);
   color: white;
 }
 
-section#ubicacion h2 {
+section#ubicacion h1 {
   color: white;
   text-align: center;
   margin-bottom: 20px;
@@ -267,4 +309,112 @@ section#ubicacion .col-md-6:first-child {
 
 section#ubicacion ul li {
   list-style-type: none;
+}
+
+/*Empresas*/
+
+section#empresas h2 {
+  text-align: center;
+  color: var(--rojo3);
+}
+
+section#empresas .slick-dots{ 
+  visibility: collapse; 
+} 
+
+section#empresas .slick-arrow{ 
+  visibility: collapse; 
+}
+
+.slider-container {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+.slider-container img{
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logo_items img{
+  height: 100px;
+  margin-left: 50px;
+}
+
+
+/*Footer*/
+section#footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(248, 249, 250);
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  height: 230px;
+  padding: 10px;
+}
+.footer{
+  background-color: rgba(248, 249, 250);
+  font-weight: bolder;
+}
+
+.icono{
+padding-left: 1rem;
+}
+
+
+.logo-footer img{
+  height: 6rem;
+  display: flex;
+  margin-right: 4rem;
+  justify-content: center;
+}
+
+.footer p{
+  font-size: smaller;
 }
